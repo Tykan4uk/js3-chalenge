@@ -1,3 +1,32 @@
+const arr1 = [
+  [1, 2],
+  [3, 4],
+];
+const arr2 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+function rotateMatrix(array) {
+  const result = [];
+
+  for (let i = 0; i < array.length; i++) {
+    const tempArray = [];
+
+    array.forEach(element => {
+      tempArray.push(element[i])
+    })
+
+    result.push(tempArray);
+  }
+
+  console.log(result)
+}
+
+rotateMatrix(arr1);
+rotateMatrix(arr2);
+
 function dragonCurve(number = 1) {
   let array = [1];
 
