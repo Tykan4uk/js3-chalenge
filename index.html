@@ -6,10 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS3 challenge</title>
+  <style>
+    #column-1 {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label,
+    input,
+    button {
+      height: 30px;
+    }
+  </style>
 </head>
 
 <body>
-
+  <div id="column-1">
+    <label>First task with matrix rotate in console</label>
+    <input type="number" value="1" min="1" id="input-number">
+    <button onclick="driveLine(dragonCurve(document.getElementById('input-number').value))">Click for building dragon
+      curve</button>
+  </div>
+  <canvas width="1000" height="1000" id="canvas"></canvas>
+  <script src="./challenge.js"></script>
 </body>
 
 </html>
